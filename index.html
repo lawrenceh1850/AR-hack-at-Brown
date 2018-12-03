@@ -28,7 +28,8 @@
 -->
 
 <!--
-  AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf
+  AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js -
+  info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf
 -->
 <!DOCTYPE html>
 <html>
@@ -60,7 +61,11 @@
           scale="0.2 0.2 0.2"
         ></a-entity>
       </a-entity>
-      <a-marker-camera preset="hiro"></a-marker-camera>
+      <!-- <a-marker-camera preset="hiro"></a-marker-camera> -->
+      <a-marker-camera
+        type="pattern"
+        url="./assets/pattern-marker.patt"
+      ></a-marker-camera>
     </a-scene>
   </body>
 </html>
